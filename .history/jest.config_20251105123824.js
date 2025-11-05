@@ -7,9 +7,6 @@ module.exports = {
       testEnvironment: 'node',
       testMatch: ['<rootDir>/server/tests/**/*.test.js'],
       moduleFileExtensions: ['js', 'json'],
-      transform: {
-        '^.+\\.js$': 'babel-jest',
-      },
       coverageDirectory: '<rootDir>/coverage/server',
       collectCoverageFrom: [
         'server/src/**/*.js',
@@ -24,14 +21,13 @@ module.exports = {
       testEnvironment: 'jsdom',
       testMatch: ['<rootDir>/client/src/**/*.test.{js,jsx}'],
       moduleFileExtensions: ['js', 'jsx', 'json'],
-      moduleNameMapper: {
+      moduleNameMapping: {
         '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
         '\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/client/src/tests/__mocks__/fileMock.js',
       },
       transform: {
         '^.+\\.(js|jsx)$': 'babel-jest',
       },
-      setupFilesAfterEnv: ['<rootDir>/client/src/tests/setup.js'],
       coverageDirectory: '<rootDir>/coverage/client',
       collectCoverageFrom: [
         'client/src/**/*.{js,jsx}',

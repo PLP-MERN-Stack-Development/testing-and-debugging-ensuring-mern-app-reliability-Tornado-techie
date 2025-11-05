@@ -1,0 +1,30 @@
+{
+  "name": "bug-tracker-server",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:unit": "jest --testPathPattern=\"unit\"",
+    "test:integration": "jest --testPathPattern=\"integration\"",
+    "setup-test-db": "node scripts/setupTestDB.js",
+    "debug": "node --inspect src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.0.0",
+    "supertest": "^6.3.3",
+    "mongodb-memory-server": "^8.15.0"
+  }
+}

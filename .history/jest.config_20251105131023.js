@@ -7,6 +7,12 @@ module.exports = {
       testEnvironment: 'node',
       testMatch: ['<rootDir>/server/tests/**/*.test.js'],
       moduleFileExtensions: ['js', 'json'],
+      extensionsToTreatAsEsm: ['.js'],
+      globals: {
+        'ts-jest': {
+          useESM: true
+        }
+      },
       transform: {
         '^.+\\.js$': 'babel-jest',
       },

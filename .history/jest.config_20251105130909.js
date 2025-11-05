@@ -7,9 +7,6 @@ module.exports = {
       testEnvironment: 'node',
       testMatch: ['<rootDir>/server/tests/**/*.test.js'],
       moduleFileExtensions: ['js', 'json'],
-      transform: {
-        '^.+\\.js$': 'babel-jest',
-      },
       coverageDirectory: '<rootDir>/coverage/server',
       collectCoverageFrom: [
         'server/src/**/*.js',
@@ -31,7 +28,6 @@ module.exports = {
       transform: {
         '^.+\\.(js|jsx)$': 'babel-jest',
       },
-      setupFilesAfterEnv: ['<rootDir>/client/src/tests/setup.js'],
       coverageDirectory: '<rootDir>/coverage/client',
       collectCoverageFrom: [
         'client/src/**/*.{js,jsx}',
