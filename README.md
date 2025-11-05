@@ -9,6 +9,34 @@ A comprehensive MERN stack bug tracking application demonstrating testing strate
 - **Features**: All 4 required features implemented and tested
 - **Database**: MongoDB integration with in-memory testing
 
+## 📸 **Screenshots & Evidence**
+
+### Test Coverage Reports
+![Jest Coverage Report](screenshots/testcoveragereport.png)
+
+### API Test Results
+![API Test Results](screenshots/APItestreport.png)
+
+### HTML coverage Results
+![HTML coverage report](screenshots/HTMLcoveragereport.png)
+
+### Application Screenshots
+![Main tracker view](screenshots/mainview.png)
+
+![Report a new bug](screenshots/reportbugview.png)
+
+![A created bug report](screenshots/bugreport1.png)
+
+![Successful bug report submission](screenshots/successreporting.png)
+
+![Add steps in the tracker reports](screenshots/addstepsection.png)
+
+![Filter sample 1](screenshots/filters1.png)
+
+![Filter sample 2](screenshots/filters2.png)
+
+![Search funtionality](screenshots/searchfunction.png)
+
 ## 📋 Table of Contents
 
 - [Features](#features)
@@ -284,17 +312,7 @@ npm run test:integration   # Integration tests only
 
 ### Test Coverage Reports
 
-*Note: Screenshots would be inserted here in actual implementation*
-
-#### Unit Test Coverage Report
-```
-[PLACEHOLDER: Screenshot of Jest coverage report showing line/branch coverage]
-```
-
-#### Integration Test Results
-```
-[PLACEHOLDER: Screenshot of API test results with response times]
-```
+The following coverage metrics demonstrate comprehensive testing across the application:
 
 ### Running Tests
 

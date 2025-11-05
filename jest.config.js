@@ -1,4 +1,4 @@
-// jest.config.js - Simplified Jest configuration
+// jest.config.js - Jest configuration with ES modules support
 module.exports = {
   projects: [
     // Server-side tests configuration
@@ -7,8 +7,14 @@ module.exports = {
       testEnvironment: 'node',
       testMatch: ['<rootDir>/server/tests/**/*.test.js'],
       moduleFileExtensions: ['js', 'json'],
+      extensionsToTreatAsEsm: ['.js'],
+      globals: {
+        'babel-jest': {
+          useESM: true
+        }
+      },
       transform: {
-        '^.+\\.js$': 'babel-jest',
+        '^.+\\.js$': ['babel-jest', { presets: [['@babel/preset-env', { targets: { node: 'current' }, modules: false }]] }]
       },
       coverageDirectory: '<rootDir>/coverage/server',
       collectCoverageFrom: [
